@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ResourceScanReadAndStart",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:ListResourceScans",
+                "cloudformation:ListResourceScanResources",
+                "cloudformation:DescribeResourceScan",
+                "cloudformation:StartResourceScan"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "GeneratedTemplateLifecycle",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CreateGeneratedTemplate",
+                "cloudformation:DescribeGeneratedTemplate",
+                "cloudformation:DeleteGeneratedTemplate",
+                "cloudformation:GetGeneratedTemplate",
+                "cloudformation:ListGeneratedTemplates"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

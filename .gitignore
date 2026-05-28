@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Generated output (contains real account data; never commit)
+cfn-templates/
+cfn-templates.zip
+*.yaml.bak
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local config
+.env
+*.local
